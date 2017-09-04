@@ -1,7 +1,7 @@
 {
   "name": "json-schema-comparison",
   "version": "0.0.1",
-  "description": "JSON Schema semver comparison tool",
+  "description": "JSON Schema comparison tool",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -fr ./dist && ./node_modules/.bin/tsc",
