@@ -1,5 +1,5 @@
-interface IFoo {
-  foo: string;
-}
+export type CompareResult = 'model' | 'revision' | 'addition' | 'equal';
 
-const foo: IFoo = {foo: 'xx'};
+export default function compare(schema1: any, schema2: any): CompareResult {
+  return 'equal';
+}
