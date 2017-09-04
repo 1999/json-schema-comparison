@@ -1,0 +1,40 @@
+{
+  "name": "json-schema-comparison",
+  "version": "0.0.1",
+  "description": "JSON Schema semver comparison tool",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -fr ./dist && ./node_modules/.bin/tsc",
+    "clean": "rm -fr ./node_modules && rm -fr ./dist",
+    "lint": "tslint  -p . -c tslint.json 'src/**/*.ts'",
+    "prepublishOnly": "npm run build",
+    "test:unit": "./node_modules/.bin/mocha --compilers ts:ts-node/register test/",
+    "test": "npm run lint && npm run test:unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1999/json-schema-comparison.git"
+  },
+  "keywords": [
+    "json",
+    "schema",
+    "semver"
+  ],
+  "author": "Dmitrii Sorin <info@staypositive.ru>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/1999/json-schema-comparison/issues"
+  },
+  "homepage": "https://github.com/1999/json-schema-comparison#readme",
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "mocha": "^3.5.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.7.0",
+    "typescript": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=8",
+    "npm": ">=5"
+  }
+}

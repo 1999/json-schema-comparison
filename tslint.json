@@ -1,0 +1,11 @@
+{
+  "extends": "tslint:recommended",
+  "rules": {
+    "arrow-parens": false,
+    "indent": [true, "spaces", 2],
+    "member-access": [true, "no-public"],
+    "no-unused-variable": [true, "check-parameters"],
+    "quotemark": [true, "single"],
+    "switch-default": true
+  }
+}
